@@ -6,16 +6,16 @@
 % Calcula o erro entre a imagem original e a imagem descomprimida, como pede o 
 % enunciado.
 function calculateError(originalImg, decompressedImg)
-	A = imread (originalImg);
-	B = imread (decompressedImg);
+    A = imread (originalImg);
+    B = imread (decompressedImg);
 
-	C = double(A);
-	D = double(B);
+    C = double(A);
+    D = double(B);
 
-	errR = norm(C(:, :, 1)-D(:, :, 1))/norm(C(:, :, 1));
-	errG = norm(C(:, :, 2)-D(:, :, 2))/norm(C(:, :, 2));
-	errB = norm(C(:, :, 3)-D(:, :, 3))/norm(C(:, :, 3));
+    errR = norm(C(:, :, 1)-D(:, :, 1))/norm(C(:, :, 1));
+    errG = norm(C(:, :, 2)-D(:, :, 2))/norm(C(:, :, 2));
+    errB = norm(C(:, :, 3)-D(:, :, 3))/norm(C(:, :, 3));
 
-	err = (errR+errG+errB)/3
+    err = (errR+errG+errB)/3
 
 endfunction
