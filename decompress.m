@@ -3,6 +3,10 @@
 %
 % Arquivo parte do EP2 de MAC0210
 
+% Recebe uma imagem comprimida e a descomprime usando o método bilinear ou o 
+% método bicúbico. A taxa de descompressão é dada pelo k e o h representa o
+% tamanho do lado do quadrado utilizado para o método escolhido para a
+% interpolação.
 function decompress (compressedImg, method, k, h) 
     A = imread (compressedImg);
     n = size(A)(1);
@@ -15,26 +19,28 @@ function decompress (compressedImg, method, k, h)
     imwrite (B, 'decompressed.png');
 endfunction
 
+% Utiliza o método bilinear para descomprimir uma imagem A para uma de 
+% tamanho p. O k e o h são os mesmos da função decompress.
 function B = bilinear (A, k, h, p)
     B = expande (A, k, p);
     C = [1, 0, 0, 0; 1, 0, h, 0; 1, h, 0, 0; 1, h, h, h.^2];
-    % Para cada quadrado
+    % Para cada quadrado.
     for i = 1:k+1:p-(k+1)
         for j = 1:k+1:p-(k+1)
-            %Pegar os indices convertidos
-            %Pegar as funções nesses pontos, como um vetor
+            % Pega os valores dos pixels que estão nos extremos dos quadrados.
             fx1y1 = B(i, j, :);
             fx1y2 = B(i, j+(k+1), :);
             fx2y1 = B(i+(k+1), j, :);
             fx2y2 = B(i+(k+1), j+(k+1), :);
-            %Pra cada posição do vetor (RGB), interpolar com a fórmula. X = inv(A)*B
+            % Faz a interpolação para cada cor, na ordem vermelho, verde e azul.
             for l = 1:3
                 D = [fx1y1(l); fx1y2(l); fx2y1(l); fx2y2(l)];
                 E = double(D);
                 X = inv(C)*E;
-                %Para cada ponto nesse intervalo:
+                % Para cada pixel dentro desse quadrado.
                 for m = i:i+k+1
                     for n = j:j+k+1
+                        % Se não for o pixel original usado para a interpolação.
                         if (m != i && n != j) 
                             x = ((m-i)/(k+1))*h;
                             y = ((n-j)/(k+1))*h;
@@ -47,11 +53,14 @@ function B = bilinear (A, k, h, p)
     endfor
 endfunction
 
+% Utiliza o método bicubico para descomprimir uma imagem A para uma de 
+% tamanho p. O k e o h são os mesmos da função decompress.
 function B = bicubico (A, k, h, p)
     B = expande (A, k, p);
 endfunction
 
-% Expande uma matriz quadrada de lado n para uma de lado n+(n-1)*k
+% Expande uma matriz quadrada de lado n para uma de lado n+(n-1)*k (De 
+% (p+k)/(1+k)) para p.
 function B = expande (A, k, p)
     for i = 1:p
         for j = 1:p
