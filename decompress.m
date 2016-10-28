@@ -18,35 +18,31 @@ endfunction
 function B = bilinear (A, k, h, p)
     B = expande (A, k, p);
     C = [1, 0, 0, 0; 1, 0, h, 0; 1, h, 0, 0; 1, h, h, h.^2];
-    x1 = 1;
-    y1 = 1;
     % Para cada quadrado
-    for i = h+1:h:p
-        for j = h+1:h:p
+    for i = 1:k+1:p-(k+1)
+        for j = 1:k+1:p-(k+1)
             %Pegar os indices convertidos
-            x2 = i;
-            y2 = j;
             %Pegar as funções nesses pontos, como um vetor
-            fx1y1 = B(x1, y1, :);
-            fx1y2 = B(x1, y2, :);
-            fx2y1 = B(x2, y1, :);
-            fx2y2 = B(x2, y2, :);
+            fx1y1 = B(i, j, :);
+            fx1y2 = B(i, j+(k+1), :);
+            fx2y1 = B(i+(k+1), j, :);
+            fx2y2 = B(i+(k+1), j+(k+1), :);
             %Pra cada posição do vetor (RGB), interpolar com a fórmula. X = inv(A)*B
             for l = 1:3
                 D = [fx1y1(l); fx1y2(l); fx2y1(l); fx2y2(l)];
-                D = double(D);
-                X = inv(C)*D;
-                %Sem os pontos de fronteira
+                E = double(D);
+                X = inv(C)*E;
                 %Para cada ponto nesse intervalo:
-                for m = x1:x2
-                    for n = y1:y2
-                        %Então calcular f(x, y) = x(1) + x(2) (x − x i ) + x(3)(y − y j ) + x(4) (x − x i )(y − y j ) 
-                        B(m, n, l) = X(1) + X(2).*(m - x1) + X(3).*(n - y1) + X(4).*(m - x1).*(n - y1);
+                for m = i:i+k+1
+                    for n = j:j+k+1
+                        if (m != i && n != j) 
+                            x = ((m-i)/(k+1))*h;
+                            y = ((n-j)/(k+1))*h;
+                            B(m, n, l) = X(1) + X(2).*x + X(3).*y + X(4).*x.*y;
+                        endif
                     endfor
                 endfor
             endfor
-            x1 = x2;
-            y1 = y2;
         endfor
     endfor
 endfunction
