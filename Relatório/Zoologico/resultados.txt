@@ -1,0 +1,24 @@
+função do enunciado colorida zoo1
+k = 3
+h = 4
+err = 0.76841
+
+função do enunciado em p e b
+k = 3
+h = 4
+err = 0.77409
+
+f(x,y) = (tan(x) - tan(y), tan(y) - y, tan(x)) zoo2 - NÃO CONTINUA em C^2
+k = 7
+h = 5
+err = 1.0884
+
+k = 7
+h = 7
+err = 1.0884
+
+f(x,y) = (cos(x); 2*cos(y); x.^2)
+k = 4
+h = 2
+err = 0.66150
+
