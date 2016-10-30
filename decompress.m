@@ -19,6 +19,20 @@ function decompress (compressedImg, method, k, h)
     imwrite (B, 'decompressed.png');
 endfunction
 
+% Expande uma matriz quadrada de lado n para uma de lado n+(n-1)*k (De 
+% (p+k)/(1+k)) para p.
+function B = expande (A, k, p)
+    for i = 1:p
+        for j = 1:p
+            if rem(i, k+1) == 1 && rem(j, k+1) == 1
+                B(i, j, :) = A(((i-1)/(k+1))+1, ((j-1)/(k+1))+1, :);
+            else
+                B(i, j, :) = 0;
+           endif 
+        endfor
+    endfor
+endfunction
+
 % Utiliza o método bilinear para descomprimir uma imagem A para uma de 
 % tamanho p. O k e o h são os mesmos da função decompress.
 function B = bilinear (A, k, h, p)
@@ -53,7 +67,35 @@ function B = bilinear (A, k, h, p)
     endfor
 endfunction
 
+function D = derivax (i, j, k, h, p, B)
+    if (i <= 1)
+        D = (B(i+(k+1), j, :) - B(i, j, :))./h;
+    elseif (i >= p-(k+1))
+        D = (B(i, j, :) - B(i-(k+1), j, :))./h;
+    else
+        D = (B(i+(k+1), j, :) - B(i-(k+1), j, :))./h;
+    endif
+endfunction
 
+function D = derivay (i, j, k, h, p, B)
+    if (j <= 1)
+        D = (B(i, j+(k+1), :) - B(i, j, :))./h;
+    elseif (j >= p-(k+1))
+        D = (B(i, j, :) - B(i, j-(k+1), :))./h;
+    else
+        D = (B(i, j+(k+1), :) - B(i, j-(k+1), :))./h;
+    endif
+endfunction
+
+function D = derivaxy (i, j, k, h, p, B)
+    if (i <= 1)
+        D = (derivay(i+(k+1), j, k, h, p, B) - derivay(i, j, k, h, p, B))./(2.*h);
+    elseif (i >= p-(k+1))
+        D = (derivay(i, j, k, h, p, B) - derivay(i-(k+1), j, k, h, p, B))./(2.*h);
+    else
+        D = (derivay(i+(k+1), j, k, h, p, B) - derivay(i-(k+1), j, k, h, p, B))./(2.*h);
+    endif
+endfunction
 
 % Utiliza o método bicubico para descomprimir uma imagem A para uma de 
 % tamanho p. O k e o h são os mesmos da função decompress.
@@ -107,46 +149,5 @@ function B = bicubico (A, k, h, p)
     endfor
 endfunction
 
-function D = derivax (i, j, k, h, p, B)
-    if (i == 1) {
-        D = (B(i+(k+1),j,:) - B(i,j,:))./h;
-    } elseif (i == p-(k+1)) {
-        D = (B(i,j,:) - B(i-(k+1),j,:))./h;
-    } else {
-        D = (B(i+(k+1),j,:) - B(i-(k+1),j,:))./h;
-    }
-endfunction
 
-function D = derivay (i, j, k, h, p, B)
-    if (j == 1) {
-        D = (B(i,j+(k+1),:) - B(i,j,:))./h;
-    } elseif (j == p-(k+1)) {
-        D = (B(i,j,:) - B(i,j-(k+1),:))./h;
-    } else {
-        D = (B(i,j+(k+1),:) - B(i,j-(k+1),:))./h;
-    }
-endfunction
 
-function D = derivaxy (i, j, k, h, p, B)
-    if (i == 1) {
-        D = (derivay(i+(k+1),j,k,B) - derivay(i,j,k,B))./(2.*h);
-    } elseif (i == p-(k+1)) {
-        D = (derivay(i,j,k,B) - derivay(i-(k+1),j,k,B))./(2.*h);
-    } else {
-        D = (derivay(i+(k+1),j,k,B) - derivay(i-(k+1),j,k,B))./(2.*h);
-    }
-endfunction
-
-% Expande uma matriz quadrada de lado n para uma de lado n+(n-1)*k (De 
-% (p+k)/(1+k)) para p.
-function B = expande (A, k, p)
-    for i = 1:p
-        for j = 1:p
-            if rem(i, k+1) == 1 && rem(j, k+1) == 1
-                B(i, j, :) = A(((i-1)/(k+1))+1, ((j-1)/(k+1))+1, :);
-            else
-                B(i, j, :) = 0;
-           endif 
-        endfor
-    endfor
-endfunction
