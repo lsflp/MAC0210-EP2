@@ -53,6 +53,8 @@ function B = bilinear (A, k, h, p)
     endfor
 endfunction
 
+
+
 % Utiliza o método bicubico para descomprimir uma imagem A para uma de 
 % tamanho p. O k e o h são os mesmos da função decompress.
 function B = bicubico (A, k, h, p)
@@ -67,18 +69,19 @@ function B = bicubico (A, k, h, p)
             fx1y2 = B(i, j+(k+1), :);
             fx2y1 = B(i+(k+1), j, :);
             fx2y2 = B(i+(k+1), j+(k+1), :);
-            dyfx1y1 = ?;
-            dyfx1y2 = ?;
-            dyfx2y1 = ?;
-            dyfx2y2 = ?;
-            dxfx1y1 = ?;
-            dxfx1y2 = ?;
-            dxfx2y1 = ?;
-            dxfx2y2 = ?;
-            dxyfx1y1 = ?;
-            dxyfx1y2 = ?;
-            dxyfx2y1 = ?;
-            dxyfx2y2 = ?;
+            dyfx1y1 = derivay(i, j, k, h, p, B);
+            dyfx1y2 = derivay(i, j+(k+1), k, h, p, B);
+            dyfx2y1 = derivay(i+(k+1), j, k, h, p, B);
+            dyfx2y2 = derivay(i+(k+1), j+(k+1), k, h, p, B);
+            dxfx1y1 = derivax(i, j, k, h, p, B);
+            dxfx1y2 = derivax(i, j+(k+1), k, h, p, B);
+            dxfx2y1 = derivax(i+(k+1), j, k, h, p, B);
+            dxfx2y2 = derivax(i+(k+1), j+(k+1), k, h, p, B);
+            dxyfx1y1 = derivaxy(i, j, k, h, p, B);
+            dxyfx1y2 = derivaxy(i, j+(k+1), k, h, p, B);
+            dxyfx2y1 = derivaxy(i+(k+1), j, k, h, p, B);
+            dxyfx2y2 = derivaxy(i+(k+1), j+(k+1), k, h, p, B);
+
             % Faz a interpolação para cada cor, na ordem vermelho, verde e azul.
             for l = 1:3
                 D =   [  fx1y1(l),   fx1y2(l),  dyfx1y1(l),  dyfx1y2(l); 
@@ -102,6 +105,36 @@ function B = bicubico (A, k, h, p)
             endfor
         endfor
     endfor
+endfunction
+
+function D = derivax (i, j, k, h, p, B)
+    if (i == 1) {
+        D = (B(i+(k+1),j,:) - B(i,j,:))./h;
+    } elseif (i == p-(k+1)) {
+        D = (B(i,j,:) - B(i-(k+1),j,:))./h;
+    } else {
+        D = (B(i+(k+1),j,:) - B(i-(k+1),j,:))./h;
+    }
+endfunction
+
+function D = derivay (i, j, k, h, p, B)
+    if (j == 1) {
+        D = (B(i,j+(k+1),:) - B(i,j,:))./h;
+    } elseif (j == p-(k+1)) {
+        D = (B(i,j,:) - B(i,j-(k+1),:))./h;
+    } else {
+        D = (B(i,j+(k+1),:) - B(i,j-(k+1),:))./h;
+    }
+endfunction
+
+function D = derivaxy (i, j, k, h, p, B)
+    if (i == 1) {
+        D = (derivay(i+(k+1),j,k,B) - derivay(i,j,k,B))./(2.*h);
+    } elseif (i == p-(k+1)) {
+        D = (derivay(i,j,k,B) - derivay(i-(k+1),j,k,B))./(2.*h);
+    } else {
+        D = (derivay(i+(k+1),j,k,B) - derivay(i-(k+1),j,k,B))./(2.*h);
+    }
 endfunction
 
 % Expande uma matriz quadrada de lado n para uma de lado n+(n-1)*k (De 
