@@ -118,7 +118,15 @@
 	\begin{center}
 		\texttt{function B = bicubico (A, k, h, p)}
 	\end{center}
-	
+
+	Essa função representa o outro método de interpolação descrito no enunciado, o método Bicubico.
+
+	Da mesma forma que no outro método, chamamos a função \texttt{expande} que devolve uma matriz com o tamanho necessário (mais detalhes abaixo).
+
+	Para o cálculo das derivadas parciais existem 3 funções: \texttt{derivax}, \texttt{derivay} e \texttt{derivaxy} que já verificam as condições para as derivadas na borda. Uma observação a se realizar é que consideramos que nos casos em que aparecem pontos que extrapolam a grade fizemos os cálculos utilizando a diferença unilateral com o ponto da borda e seu adjacente.
+
+	Para cada quadrado $Q_{ij}$ descrito no enunciado calculamos a matriz com os 16 coeficientes de $p_{ij}$. Calculamos os valores das cores de cada pixel da imagem com a fórmula do polinômio interpolador para cada quadrado $Q_{ij}$ do enunciado.
+
 	\begin{center}
 		\texttt{function B = expande (A, k, p)}
 	\end{center}
