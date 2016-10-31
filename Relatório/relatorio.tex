@@ -109,7 +109,7 @@
 			\item \texttt{x = ((m-i)/(k+1))*h;}, onde $m$ é a real coordenada do ponto na matriz, $i$ é o início do quadrado na matriz grande, $k$ é a taxa de descompressão e $h$ é referente ao lado do quadrado, definido no enunciado.
 			\item \texttt{y = ((n-j)/(k+1))*h;}, onde $n$ é a real coordenada do ponto na matriz, $j$ é o início do quadrado na matriz grande, e o resto é análogo.
 		\end{itemize}
-		\item Isso faz com que os pontos usados para a interpolação vão de 0 a $h$.
+		\item Isso faz com que os índices dentro do quadrado estejam entre 0 e $h$, e, por consequência, o quadrado tenha lado de tamanho $k$.
 	\end{itemize}
 	
 	O cálculo é feito para todos os pontos que não são os vértices do quadrado. 
@@ -189,7 +189,7 @@
 	
 	\textbf{7.} Considerando uma imagem de tamanho $p^2$, comprimida com $k = 7$ e descomprimida com $k = 7$ e com $k = 1$ três vezes, quais são as conclusões?\\
 	As imagens ficam pareceidas visualmente, porém o erro é menor (como mostram as imagens (h) e (i)).
-.
+	
 	Abaixo, seguem as imagens acima descomprimidas.
 	
 	\begin{figure}[h]
@@ -303,7 +303,7 @@
 	Também unciona. As imagens ficam visualmente parecidas e o erro fica pequeno (a maioria na ordem de $10^{-2}$)\\
 	
 	\textbf{3.} Como o valor de h muda a interpolação? 
-	Em imagens reais, o valor de h não parece interferir tanto na interpolação, pois, como exibido abaixo pelas figuras (q) e (r), que foram descomprimidas com h diferente ($h = 3$ e $h = 5$), o erro ficou muito próximom, mas parece diminuir quando $h$ aumenta.\\
+	Em imagens reais, o valor de h não parece interferir tanto na interpolação, pois, como exibido abaixo pelas figuras (q) e (r), que foram descomprimidas com h diferente ($h = 3$ e $h = 5$), o erro ficou muito próximo, mas parece diminuir quando $h$ aumenta.\\
 	
 	\textbf{4.} Como se comporta o erro?
 	Os erros ficaram bem pequenos, como exibido abaixo. Foi interessante ver que mudando a cor de uma imagem seu erro muda, e que quanto menor o $h$ usado para compressão e descompressão, menor o erro, como mostrado pelas imagens (o) e (p). \\
