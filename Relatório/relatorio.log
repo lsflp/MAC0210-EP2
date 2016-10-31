@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.10.18)  29 OCT 2016 01:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.10.18)  30 OCT 2016 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -648,58 +648,75 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip66
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip67
-\subfigcapskip=\skip68
-\subfigcaptopadj=\dimen131
-\subfigbottomskip=\skip69
-\subfigcapmargin=\dimen132
-\subfiglabelskip=\skip70
-\c@subfigure=\count114
-\c@lofdepth=\count115
-\c@subtable=\count116
-\c@lotdepth=\count117
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip71
-\subfig@bottom=\skip72
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen131
+\captionmargin@=\dimen132
+\captionwidth=\dimen133
+\caption@tempdima=\dimen134
+\caption@indent=\dimen135
+\caption@parindent=\dimen136
+\caption@hangindent=\dimen137
 )
-\tabcont=\skip73
+\c@ContinuedFloat=\count114
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count115
+\sf@farskip=\skip67
+\sf@captopadj=\dimen138
+\sf@capskip=\skip68
+\sf@nearskip=\skip69
+\c@subfigure=\count116
+\c@subfigure@save=\count117
+\c@lofdepth=\count118
+\c@subtable=\count119
+\c@subtable@save=\count120
+\c@lotdepth=\count121
+\sf@top=\skip70
+\sf@bottom=\skip71
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/alphalph.sty
+Package: alphalph 2016/05/16 v2.5 Convert numbers to letters (HO)
+)
+\tabcont=\skip72
 
 (./relatorio.aux)
 \openout1 = `relatorio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen133
+\scratchcounter=\count122
+\scratchdimen=\dimen139
 \scratchbox=\box28
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen134
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen140
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -753,9 +770,9 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 15.
+LaTeX Info: Redefining \selectfont on input line 16.
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -763,90 +780,83 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
 
 (./relatorio.out) (./relatorio.out)
 \@outlinefile=\write3
 \openout3 = `relatorio.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 17.
+               Default added (so using `tbp') on input line 18.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 104.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
  [2
 
 ]
-<zoo1.png, id=63, 282.05376pt x 282.05376pt>
+<zoo1.png, id=64, 282.05376pt x 282.05376pt>
 File: zoo1.png Graphic file (type png)
  <use zoo1.png>
-Package pdftex.def Info: zoo1.png used on input line 138.
+Package pdftex.def Info: zoo1.png used on input line 147.
 (pdftex.def)             Requested size: 184.94667pt x 184.94667pt.
 
-<zoo1a.png, id=64, 282.05376pt x 282.05376pt>
+<zoo1a.png, id=65, 282.05376pt x 282.05376pt>
 File: zoo1a.png Graphic file (type png)
  <use zoo1a.png>
-Package pdftex.def Info: zoo1a.png used on input line 140.
+Package pdftex.def Info: zoo1a.png used on input line 149.
 (pdftex.def)             Requested size: 184.94667pt x 184.94667pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<zoo3.png, id=65, 282.05376pt x 282.05376pt>
+ [3]
+<zoo3.png, id=71, 282.05376pt x 282.05376pt>
 File: zoo3.png Graphic file (type png)
  <use zoo3.png>
-Package pdftex.def Info: zoo3.png used on input line 145.
+Package pdftex.def Info: zoo3.png used on input line 154.
 (pdftex.def)             Requested size: 184.94667pt x 184.94667pt.
 
-<zoo2.png, id=66, 506.89375pt x 506.89375pt>
+<zoo2.png, id=72, 506.89375pt x 506.89375pt>
 File: zoo2.png Graphic file (type png)
  <use zoo2.png>
-Package pdftex.def Info: zoo2.png used on input line 147.
+Package pdftex.def Info: zoo2.png used on input line 156.
 (pdftex.def)             Requested size: 184.9412pt x 184.9412pt.
+ [4pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+1.1}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.166 	\clearpage
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{subfigure.1.2}) has been already used, duplicate ignored
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3] [4 <./zoo1.png (PNG copy)> <./zoo1a.png> <./zoo3.png (PNG copy)> <./zoo2.pn
-g (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
-
- []
-
-
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.166 	\clearpage
+                  <./zoo1.png (PNG copy)> <./zoo1a.png> <./zoo3.png (PNG copy)>
+ <./zoo2.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
@@ -861,16 +871,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
-<zdec1.png, id=81, 282.05376pt x 282.05376pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 		\subfloat
+                 [1 descomprimida com h = 4 e k = 3, err = 0.76841\label{sur...
+<zdec1.png, id=82, 282.05376pt x 282.05376pt>
 File: zdec1.png Graphic file (type png)
  <use zdec1.png>
-Package pdftex.def Info: zdec1.png used on input line 188.
+Package pdftex.def Info: zdec1.png used on input line 197.
 (pdftex.def)             Requested size: 142.266pt x 142.266pt.
-
-<zdec1a.png, id=82, 282.05376pt x 282.05376pt>
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.198 		\subfloat
+                 [1 descomprimida com h = 4 e k = 3, err = 0.77409 \label{su...
+<zdec1a.png, id=83, 282.05376pt x 282.05376pt>
 File: zdec1a.png Graphic file (type png)
  <use zdec1a.png>
-Package pdftex.def Info: zdec1a.png used on input line 190.
+Package pdftex.def Info: zdec1a.png used on input line 199.
+(pdftex.def)             Requested size: 142.266pt x 142.266pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.203 		\subfloat
+                 [2 descomprimida com h = 5 e k = 7, err = 1.0884\label{surr...
+<zdec2.png, id=84, 506.89375pt x 506.89375pt>
+File: zdec2.png Graphic file (type png)
+ <use zdec2.png>
+Package pdftex.def Info: zdec2.png used on input line 204.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.205 		\subfloat
+                 [2 descomprimida com h = 7 e k = 7, err = 1.0884\label{surr...
+<zdec2a.png, id=85, 506.89375pt x 506.89375pt>
+File: zdec2a.png Graphic file (type png)
+ <use zdec2a.png>
+Package pdftex.def Info: zdec2a.png used on input line 206.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.210 		\subfloat
+                 [2 descomprimida com h = 2 e k = 1 três vezes, err = 0.097...
+<zdec2b.png, id=86, 506.89375pt x 506.89375pt>
+File: zdec2b.png Graphic file (type png)
+ <use zdec2b.png>
+Package pdftex.def Info: zdec2b.png used on input line 211.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.212 		\subfloat
+                 [3 descomprimida com h = 2 e k = 4, err = 0.66150\label{sur...
+<zdec3.png, id=87, 282.05376pt x 282.05376pt>
+File: zdec3.png Graphic file (type png)
+ <use zdec3.png>
+Package pdftex.def Info: zdec3.png used on input line 213.
 (pdftex.def)             Requested size: 142.266pt x 142.266pt.
 
 
@@ -878,151 +966,398 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5
 
-] [6 <./zdec1.png (PNG copy)> <./zdec1a.png (PNG copy)>]
-<zdec2.png, id=93, 506.89375pt x 506.89375pt>
-File: zdec2.png Graphic file (type png)
- <use zdec2.png>
-Package pdftex.def Info: zdec2.png used on input line 197.
-(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+] [6 <./zdec1.png (PNG copy)> <./zdec1a.png (PNG copy)> <./zdec2.png (PNG copy)
+> <./zdec2a.png (PNG copy)> <./zdec2b.png (PNG copy)> <./zdec3.png (PNG copy)>]
 
-<zdec2a.png, id=94, 506.89375pt x 506.89375pt>
-File: zdec2a.png Graphic file (type png)
- <use zdec2a.png>
-Package pdftex.def Info: zdec2a.png used on input line 199.
-(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
-<zdec2b.png, id=95, 506.89375pt x 506.89375pt>
-File: zdec2b.png Graphic file (type png)
- <use zdec2b.png>
-Package pdftex.def Info: zdec2b.png used on input line 204.
-(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+ []
 
-<zdec3.png, id=96, 282.05376pt x 282.05376pt>
-File: zdec3.png Graphic file (type png)
- <use zdec3.png>
-Package pdftex.def Info: zdec3.png used on input line 206.
-(pdftex.def)             Requested size: 142.266pt x 142.266pt.
- [7
 
- <./zdec2.png (PNG copy)> <./zdec2a.png (PNG copy)> <./zdec2b.png (PNG copy)> <
-./zdec3.png (PNG copy)>] <1.png, id=106, 282.05376pt x 282.05376pt>
-File: 1.png Graphic file (type png)
- <use 1.png>
-Package pdftex.def Info: 1.png used on input line 220.
-(pdftex.def)             Requested size: 85.35703pt x 85.35703pt.
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
-<2.png, id=107, 506.89375pt x 506.89375pt>
-File: 2.png Graphic file (type png)
- <use 2.png>
-Package pdftex.def Info: 2.png used on input line 222.
-(pdftex.def)             Requested size: 85.35092pt x 85.35092pt.
+ []
 
-<3.png, id=108, 506.89375pt x 506.89375pt>
-File: 3.png Graphic file (type png)
- <use 3.png>
-Package pdftex.def Info: 3.png used on input line 224.
-(pdftex.def)             Requested size: 85.35092pt x 85.35092pt.
 
-<4.png, id=109, 934.49126pt x 934.49126pt>
-File: 4.png Graphic file (type png)
- <use 4.png>
-Package pdftex.def Info: 4.png used on input line 226.
-(pdftex.def)             Requested size: 85.3554pt x 85.3554pt.
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 		\subfloat
+                 [1 descomprimida com h = 4 e k = 3, err = 0.85446\label{sur...
+<zbicdec1.png, id=99, 282.05376pt x 282.05376pt>
+File: zbicdec1.png Graphic file (type png)
+ <use zbicdec1.png>
+Package pdftex.def Info: zbicdec1.png used on input line 249.
+(pdftex.def)             Requested size: 142.266pt x 142.266pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.250 		\subfloat
+                 [1 descomprimida com h = 4 e k = 3, err = 0.82142 \label{su...
+<zbicdec1a.png, id=100, 282.05376pt x 282.05376pt>
+File: zbicdec1a.png Graphic file (type png)
+ <use zbicdec1a.png>
+Package pdftex.def Info: zbicdec1a.png used on input line 251.
+(pdftex.def)             Requested size: 142.266pt x 142.266pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.256 		\subfloat
+                 [2 descomprimida com h = 5 e k = 7, err = 1.0321\label{surr...
+<zbicdec2a.png, id=101, 506.89375pt x 506.89375pt>
+File: zbicdec2a.png Graphic file (type png)
+ <use zbicdec2a.png>
+Package pdftex.def Info: zbicdec2a.png used on input line 257.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258 		\subfloat
+                 [2 descomprimida com h = 7 e k = 7, err = 1.0322\label{surr...
+<zbicdec2b.png, id=102, 506.89375pt x 506.89375pt>
+File: zbicdec2b.png Graphic file (type png)
+ <use zbicdec2b.png>
+Package pdftex.def Info: zbicdec2b.png used on input line 259.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<decompressed1.png, id=110, 282.05376pt x 282.05376pt>
-File: decompressed1.png Graphic file (type png)
- <use decompressed1.png>
-Package pdftex.def Info: decompressed1.png used on input line 259.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.263 		\subfloat
+                 [2 descomprimida com h = 2 e k = 1 três vezes, err = 1.020...
+<zbicdec2c.png, id=103, 506.89375pt x 506.89375pt>
+File: zbicdec2c.png Graphic file (type png)
+ <use zbicdec2c.png>
+Package pdftex.def Info: zbicdec2c.png used on input line 264.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.265 		\subfloat
+                 [3 descomprimida com h = 2 e k = 4, err = 0.88062\label{sur...
+<zbicdec3.png, id=104, 282.05376pt x 282.05376pt>
+File: zbicdec3.png Graphic file (type png)
+ <use zbicdec3.png>
+Package pdftex.def Info: zbicdec3.png used on input line 266.
 (pdftex.def)             Requested size: 142.266pt x 142.266pt.
 
-<decompressed1a.png, id=111, 282.05376pt x 282.05376pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7
+
+ <./zbicdec1.png (PNG copy)> <./zbicdec1a.png (PNG copy)>] [8 <./zbicdec2a.png 
+(PNG copy)> <./zbicdec2b.png (PNG copy)> <./zbicdec2c.png (PNG copy)> <./zbicde
+c3.png (PNG copy)>]pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.278 		\subfloat
+                 [Figura 4\label{surreal14}]{
+<1.png, id=117, 282.05376pt x 282.05376pt>
+File: 1.png Graphic file (type png)
+ <use 1.png>
+Package pdftex.def Info: 1.png used on input line 279.
+(pdftex.def)             Requested size: 85.35703pt x 85.35703pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.280 		\subfloat
+                 [Figura 5.\label{surreal24}]{
+<2.png, id=118, 506.89375pt x 506.89375pt>
+File: 2.png Graphic file (type png)
+ <use 2.png>
+Package pdftex.def Info: 2.png used on input line 281.
+(pdftex.def)             Requested size: 85.35092pt x 85.35092pt.
+
+<3.png, id=119, 506.89375pt x 506.89375pt>
+File: 3.png Graphic file (type png)
+ <use 3.png>
+Package pdftex.def Info: 3.png used on input line 283.
+(pdftex.def)             Requested size: 85.35092pt x 85.35092pt.
+
+<4.png, id=120, 934.49126pt x 934.49126pt>
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 285.
+(pdftex.def)             Requested size: 85.3554pt x 85.3554pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
+
+ []
+
+[9
+
+ <./1.png (PNG copy)> <./2.png (PNG copy)> <./3.png (PNG copy)> <./4.png (PNG c
+opy)>]pdfTeX warning (ext4): destination with the same identifier (name{subfigu
+re.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.317 		\subfloat
+                 [4 descomprimida com h = 4 e k = 3, err = 0.057654\label{su...
+<decompressed1.png, id=128, 282.05376pt x 282.05376pt>
+File: decompressed1.png Graphic file (type png)
+ <use decompressed1.png>
+Package pdftex.def Info: decompressed1.png used on input line 318.
+(pdftex.def)             Requested size: 142.266pt x 142.266pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.319 		\subfloat
+                 [4 descomprimida com h = 4 e k = 4, err = 0.065963 \label{s...
+<decompressed1a.png, id=129, 282.05376pt x 282.05376pt>
 File: decompressed1a.png Graphic file (type png)
 
 <use decompressed1a.png>
-Package pdftex.def Info: decompressed1a.png used on input line 261.
+Package pdftex.def Info: decompressed1a.png used on input line 320.
 (pdftex.def)             Requested size: 142.266pt x 142.266pt.
- [8
-
- <./1.png (PNG copy)> <./2.png (PNG copy)> <./3.png (PNG copy)> <./4.png (PNG c
-opy)>]
-<decompressed2.png, id=120, 506.89375pt x 506.89375pt>
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.324 		\subfloat
+                 [5 descomprimida com h = 3 e k = 7, err = 0.033480\label{su...
+<decompressed2.png, id=130, 506.89375pt x 506.89375pt>
 File: decompressed2.png Graphic file (type png)
  <use decompressed2.png>
-Package pdftex.def Info: decompressed2.png used on input line 266.
+Package pdftex.def Info: decompressed2.png used on input line 325.
 (pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
-
-<decompressed2a.png, id=121, 506.89375pt x 506.89375pt>
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.326 		\subfloat
+                 [5 descomprimida com h = 5 e k = 7, err = 0.033479\label{su...
+<decompressed2a.png, id=131, 506.89375pt x 506.89375pt>
 File: decompressed2a.png Graphic file (type png)
 
 <use decompressed2a.png>
-Package pdftex.def Info: decompressed2a.png used on input line 268.
+Package pdftex.def Info: decompressed2a.png used on input line 327.
 (pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
-
-<decompressed3.png, id=122, 506.89375pt x 506.89375pt>
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.331 		\subfloat
+                 [6 descomprimida com h = 2 e k = 7, err = 0.080604\label{su...
+<decompressed3.png, id=132, 506.89375pt x 506.89375pt>
 File: decompressed3.png Graphic file (type png)
  <use decompressed3.png>
-Package pdftex.def Info: decompressed3.png used on input line 273.
+Package pdftex.def Info: decompressed3.png used on input line 332.
 (pdftex.def)             Requested size: 113.8064pt x 113.8064pt.
-
-<decompressed3b.png, id=123, 506.89375pt x 506.89375pt>
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.333 		\subfloat
+                 [6 descomprimida com h = 2 e k = 1 três vezes, err = 0.093...
+<decompressed3b.png, id=133, 506.89375pt x 506.89375pt>
 File: decompressed3b.png Graphic file (type png)
 
 <use decompressed3b.png>
-Package pdftex.def Info: decompressed3b.png used on input line 275.
+Package pdftex.def Info: decompressed3b.png used on input line 334.
 (pdftex.def)             Requested size: 113.8064pt x 113.8064pt.
-
-<decompressed4.png, id=124, 934.49126pt x 934.49126pt>
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.335 		\subfloat
+                 [7 descomprimida com h = 5 e k = 5, err = 0.042874\label{su...
+<decompressed4.png, id=134, 934.49126pt x 934.49126pt>
 File: decompressed4.png Graphic file (type png)
  <use decompressed4.png>
-Package pdftex.def Info: decompressed4.png used on input line 277.
+Package pdftex.def Info: decompressed4.png used on input line 336.
 (pdftex.def)             Requested size: 113.80243pt x 113.80243pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./decompressed1.png (PNG copy)> <./decompressed1a.png (PNG copy)> <./decomp
-ressed2.png (PNG copy)> <./decompressed2a.png (PNG copy)>] [10 <./decompressed3
-.png (PNG copy)> <./decompressed3b.png (PNG copy)> <./decompressed4.png (PNG co
-py)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
- [11
+[10 <./decompressed1.png (PNG copy)> <./decompressed1a.png (PNG copy)> <./decom
+pressed2.png (PNG copy)> <./decompressed2a.png (PNG copy)>] [11 <./decompressed
+3.png (PNG copy)> <./decompressed3b.png (PNG copy)> <./decompressed4.png (PNG c
+opy)>]pdfTeX warning (ext4): destination with the same identifier (name{subfigu
+re.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.359 		\subfloat
+                 [4 descomprimida com h = 4 e k = 3, err = 0.057363\label{su...
+<sbicdec1a.png, id=146, 282.05376pt x 282.05376pt>
+File: sbicdec1a.png Graphic file (type png)
+ <use sbicdec1a.png>
+Package pdftex.def Info: sbicdec1a.png used on input line 360.
+(pdftex.def)             Requested size: 142.266pt x 142.266pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.361 		\subfloat
+                 [4 descomprimida com h = 4 e k = 4, err = 0.067982 \label{s...
+<sbicdec1b.png, id=147, 282.05376pt x 282.05376pt>
+File: sbicdec1b.png Graphic file (type png)
+ <use sbicdec1b.png>
+Package pdftex.def Info: sbicdec1b.png used on input line 362.
+(pdftex.def)             Requested size: 142.266pt x 142.266pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.366 		\subfloat
+                 [5 descomprimida com h = 3 e k = 7, err = 0.033906\label{su...
+<sbicdec2a.png, id=148, 506.89375pt x 506.89375pt>
+File: sbicdec2a.png Graphic file (type png)
+ <use sbicdec2a.png>
+Package pdftex.def Info: sbicdec2a.png used on input line 367.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.368 		\subfloat
+                 [5 descomprimida com h = 5 e k = 7, err = 0.033904\label{su...
+<sbicdec2b.png, id=149, 506.89375pt x 506.89375pt>
+File: sbicdec2b.png Graphic file (type png)
+ <use sbicdec2b.png>
+Package pdftex.def Info: sbicdec2b.png used on input line 369.
+(pdftex.def)             Requested size: 142.26187pt x 142.26187pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.373 		\subfloat
+                 [6 descomprimida com h = 2 e k = 7, err = 0.079984\label{su...
+<sbicdec3a.png, id=150, 506.89375pt x 506.89375pt>
+File: sbicdec3a.png Graphic file (type png)
+ <use sbicdec3a.png>
+Package pdftex.def Info: sbicdec3a.png used on input line 374.
+(pdftex.def)             Requested size: 113.8064pt x 113.8064pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 		\subfloat
+                 [6 descomprimida com h = 2 e k = 1 três vezes, err = 0.091...
+<sbicdec3b.png, id=151, 506.89375pt x 506.89375pt>
+File: sbicdec3b.png Graphic file (type png)
+ <use sbicdec3b.png>
+Package pdftex.def Info: sbicdec3b.png used on input line 376.
+(pdftex.def)             Requested size: 113.8064pt x 113.8064pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.377 		\subfloat
+                 [7 descomprimida com h = 5 e k = 5, err = 0.043302\label{su...
+<sbicdec4.png, id=152, 934.49126pt x 934.49126pt>
+File: sbicdec4.png Graphic file (type png)
+ <use sbicdec4.png>
+Package pdftex.def Info: sbicdec4.png used on input line 378.
+(pdftex.def)             Requested size: 113.80243pt x 113.80243pt.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 381.
+[12
+
+ <./sbicdec1a.png (PNG copy)> <./sbicdec1b.png (PNG copy)> <./sbicdec2a.png (PN
+G copy)> <./sbicdec2b.png (PNG copy)>] [13 <./sbicdec3a.png (PNG copy)> <./sbic
+dec3b.png (PNG copy)> <./sbicdec4.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 381.
  (./relatorio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 381.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 381.
 Package rerunfilecheck Info: File `relatorio.out' has not changed.
 (rerunfilecheck)             Checksum: 2DB2F7E48437C891137F82BF8AC6E376;662.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 381.
  ) 
 Here is how much of TeX's memory you used:
- 7769 strings out of 494902
- 108480 string characters out of 6179890
- 206050 words of memory out of 5000000
- 10893 multiletter control sequences out of 15000+600000
+ 8928 strings out of 494902
+ 129814 string characters out of 6179890
+ 230149 words of memory out of 5000000
+ 12031 multiletter control sequences out of 15000+600000
  11234 words of font info for 42 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,13n,35p,415b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,13n,49p,415b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
@@ -1035,10 +1370,10 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b>
-Output written on relatorio.pdf (11 pages, 4363751 bytes).
+Output written on relatorio.pdf (13 pages, 6292891 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
