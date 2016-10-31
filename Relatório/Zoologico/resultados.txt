@@ -1,3 +1,5 @@
+BILINEAR
+
 função do enunciado colorida zoo1
 k = 3
 h = 4
@@ -21,4 +23,37 @@ f(x,y) = (cos(x); 2*cos(y); x.^2)
 k = 4
 h = 2
 err = 0.66150
+
+-------------------------------------------------------------------------------
+
+BICUBICA
+
+função do enunciado colorida zoo1
+k = 3
+h = 4
+err = 0.85446
+
+função do enunciado em p e b
+k = 3
+h = 4
+err = 0.82142
+
+f(x,y) = (tan(x) - tan(y), tan(y) - y, tan(x)) zoo2 - NÃO CONTINUA em C^2
+k = 7
+h = 5
+err = 1.0321
+
+k = 7
+h = 7
+err = 1.0322
+
+k = 1 (3x com k = 7 no original)
+h = 2
+err = 1.0208
+
+f(x,y) = (cos(x); 2*cos(y); x.^2)
+k = 4
+h = 2
+err = 0.88062
+
 
